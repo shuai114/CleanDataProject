@@ -29,25 +29,25 @@ fBodyGyroJerkMag.
 
 Here are the transformations I performed to clean up the data:
 
-*The original data is composed of two components: training data and test data. Either of them is composed of one subject identifier file, one activity file, one feature file, and nine sampled signal data files. I merged the subject identifier file, the activity file, and the feature file in either components, and then combined the training data part and the test data part into one dataset. The nine sampled signal data files are ignored.
+* The original data is composed of two components: training data and test data. Either of them is composed of one subject identifier file, one activity file, one feature file, and nine sampled signal data files. I merged the subject identifier file, the activity file, and the feature file in either components, and then combined the training data part and the test data part into one dataset. The nine sampled signal data files are ignored.
 
-*Among the many features, I extracted only the mean and standard deviation for each measurement.
+* Among the many features, I extracted only the mean and standard deviation for each measurement.
 
-*The original activity files use numbers to represent the activities performed, but I used the corresponding activity names instead to make them more transparent.
+* The original activity files use numbers to represent the activities performed, but I used the corresponding activity names instead to make them more transparent.
 
-*The original feature data does not have variable names, and has its descriptive feature names saved separately in another file. I used those names to label the feature variables as their names. I also named the rest variables in the dataset.
+* The original feature data does not have variable names, and has its descriptive feature names saved separately in another file. I used those names to label the feature variables as their names. I also named the rest variables in the dataset.
 
-*After all the above transformations, I created a tidy data set with the average of each chosen feature variable for each activity and each subject.
+* After all the above transformations, I created a tidy data set with the average of each chosen feature variable for each activity and each subject.
 
 ###Data and Variables
 
 The tidy data set contains 180 records and 68 variables, with each record corresponding to each different subject (30 subjects in total) and activity (6 activities in total) combination. The 68 variables are:
 
-*"subject": the identifier of the subject who carried out the experiment. It ranges from 1 to 30.
+* "subject": the identifier of the subject who carried out the experiment. It ranges from 1 to 30.
 
-*"activity": the activity performed. Its value is one of the following six: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+* "activity": the activity performed. Its value is one of the following six: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
-*66 feature variables: they are the average of each chosen feature variable across all windows for each activity and each subject. The chosen features are the means and standard deviations within each window for all the measurements (features in the original data are normalized and bounded within [-1,1]). The naming convention for these 66 feature variables are "'measurement type'-'mean() or std()'-'X or Y or Z'" (the last part "-'X or Y or Z'" is omitted if the measurement is not directional). For example, variable name "tBodyAcc-mean()-X" refers to the average of the mean of the measurement tBodyAcc in the X direction, variable name "tBodyGyroJerk-std()-Z" refers to the average of the standard deviation of measurement tBodyGyroJerk in the Z direction, and variable name "fBodyGyroMag-mean()" refers to the average of the mean of measurement fBodyGyroMag. All the measurement types are listed as the following ('-XYZ' is added to the end of each directional measurement type to denote that it has 3-axial signals in the X, Y and Z directions): 
+* 66 feature variables: they are the average of each chosen feature variable across all windows for each activity and each subject. The chosen features are the means and standard deviations within each window for all the measurements (features in the original data are normalized and bounded within [-1,1]). The naming convention for these 66 feature variables are "'measurement type'-'mean() or std()'-'X or Y or Z'" (the last part "-'X or Y or Z'" is omitted if the measurement is not directional). For example, variable name "tBodyAcc-mean()-X" refers to the average of the mean of the measurement tBodyAcc in the X direction, variable name "tBodyGyroJerk-std()-Z" refers to the average of the standard deviation of measurement tBodyGyroJerk in the Z direction, and variable name "fBodyGyroMag-mean()" refers to the average of the mean of measurement fBodyGyroMag. All the measurement types are listed as the following ('-XYZ' is added to the end of each directional measurement type to denote that it has 3-axial signals in the X, Y and Z directions): 
 tBodyAcc-XYZ, 
 tGravityAcc-XYZ, 
 tBodyAccJerk-XYZ, 

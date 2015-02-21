@@ -8,11 +8,16 @@ The original data is collected from experiments carried out with a group of 30 v
 
 Within each window, the following measurements were used to estimate variables of the feature vector (including mean and standard deviation) for each pattern ('-XYZ' is used to denote 3-axial signals in the X, Y and Z directions) :
 
-*tBodyAcc-XYZ
-*tGravityAcc-XYZ
-*tBodyAccJerk-XYZ
+tBodyAcc-XYZ
+
+tGravityAcc-XYZ
+
+tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
 tGravityAccMag
 tBodyAccJerkMag

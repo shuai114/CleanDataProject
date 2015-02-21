@@ -23,7 +23,7 @@ fBodyGyro-XYZ,
 fBodyAccMag, 
 fBodyAccJerkMag, 
 fBodyGyroMag, 
-fBodyGyroJerkMag.
+and fBodyGyroJerkMag.
 
 ###My Transformation
 
@@ -64,4 +64,4 @@ fBodyGyro-XYZ,
 fBodyAccMag, 
 fBodyAccJerkMag, 
 fBodyGyroMag, 
-fBodyGyroJerkMag.
+and fBodyGyroJerkMag.

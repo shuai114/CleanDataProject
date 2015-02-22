@@ -11,3 +11,15 @@ There are four items that are required to be submitted for this project:
 * run_analysis.R: my code for performing the analysis. It is included in this repo.
 
 * A tidy data set: the tidy data set outputted by my code. It is submitted within my coursera account.
+
+Here are what I performed in this analysis to clean up the data:
+
+* Merges the subject identifier file, the activity file, and the feature file in the training and the test sets to create one data set.
+
+* Extracts only the mean and standard deviation variables for each measurement. 
+
+* Uses descriptive activity names to name the activities in the data set.
+
+* Appropriately labels the data set with descriptive variable names. 
+
+* Creates a second, independent tidy data set with the average of each extracted variable for each activity and each subject.
